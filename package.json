@@ -1,11 +1,16 @@
 {
   "name": "marboart-plugin",
   "version": "0.1.0",
-  "private": true,
+  "description": "Vue plugin of marboart",
+  "main": "lib/marboart-plugin.umd.min.js",
+  "private": false,
+  "license": "MIT",
+  "author": "cuidezhu",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name marboart-plugin --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -33,6 +38,10 @@
       "parser": "babel-eslint"
     },
     "rules": {}
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cdz4206784/marboart-plugin"
   },
   "browserslist": [
     "> 1%",
